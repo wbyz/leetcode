@@ -24,28 +24,29 @@
 // Related Topics 数学
 
 package com.wby.leetcode.editor.cn;
-public class a7_ReverseInteger{
-  public static void main(String[] args) {
-       Solution solution = new a7_ReverseInteger().new Solution();
-      int reverse = solution.reverse(-2341234);
-      System.out.println(reverse);
-  }
-  
 
-//leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public int reverse(int x) {
-        int rev = 0;
-        while (x != 0) {
-            int pop = x % 10;
-            x /= 10;
-            if (rev > Integer.MAX_VALUE/10 || (rev == Integer.MAX_VALUE / 10 && pop > 7)) return 0;
-            if (rev < Integer.MIN_VALUE/10 || (rev == Integer.MIN_VALUE / 10 && pop < -8)) return 0;
-            rev = rev * 10 + pop;
-        }
-        return rev;
+public class a7_ReverseInteger {
+    public static void main(String[] args) {
+        Solution solution = new a7_ReverseInteger().new Solution();
+        int reverse = solution.reverse(-2341234);
+        System.out.println(reverse);
     }
-}
+
+
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public int reverse(int x) {
+            int rev = 0;
+            while (x != 0) {
+                int pop = x % 10;
+                x /= 10;
+                if (rev > Integer.MAX_VALUE / 10 || (rev == Integer.MAX_VALUE / 10 && pop > 7)) return 0;
+                if (rev < Integer.MIN_VALUE / 10 || (rev == Integer.MIN_VALUE / 10 && pop < -8)) return 0;
+                rev = rev * 10 + pop;
+            }
+            return rev;
+        }
+    }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }

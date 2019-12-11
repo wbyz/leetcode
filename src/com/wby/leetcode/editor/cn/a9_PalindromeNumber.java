@@ -26,32 +26,33 @@
 // Related Topics 数学
 
 package com.wby.leetcode.editor.cn;
-public class a9_PalindromeNumber{
-  public static void main(String[] args) {
-       Solution solution = new a9_PalindromeNumber().new Solution();
-      boolean palindrome = solution.isPalindrome(121);
-      System.out.println(palindrome);
-  }
-  
 
-//leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public boolean isPalindrome(int x) {
-        int a = x;
-
-        if (x < 0) return false;
-        if (x < 10) return true;
-        if (x % 10 == 0) return false;
-
-        int b = 0;
-        while (x != 0){
-            b = b * 10 + x % 10;
-            x /= 10;
-        }
-
-        return a == b;
+public class a9_PalindromeNumber {
+    public static void main(String[] args) {
+        Solution solution = new a9_PalindromeNumber().new Solution();
+        boolean palindrome = solution.isPalindrome(121);
+        System.out.println(palindrome);
     }
-}
+
+
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public boolean isPalindrome(int x) {
+            int a = x;
+
+            if (x < 0) return false;
+            if (x < 10) return true;
+            if (x % 10 == 0) return false;
+
+            int b = 0;
+            while (x != 0) {
+                b = b * 10 + x % 10;
+                x /= 10;
+            }
+
+            return a == b;
+        }
+    }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }

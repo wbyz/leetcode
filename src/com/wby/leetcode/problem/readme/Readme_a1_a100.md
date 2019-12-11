@@ -131,9 +131,92 @@ M             1000</pre>
 <div><div>Related Topics</div><div><li>数学</li><li>字符串</li></div></div>
 
 ## a14
+<p>编写一个函数来查找字符串数组中的最长公共前缀。</p>
+
+<p>如果不存在公共前缀，返回空字符串&nbsp;<code>&quot;&quot;</code>。</p>
+
+<p><strong>示例&nbsp;1:</strong></p>
+
+<pre><strong>输入: </strong>[&quot;flower&quot;,&quot;flow&quot;,&quot;flight&quot;]
+<strong>输出:</strong> &quot;fl&quot;
+</pre>
+
+<p><strong>示例&nbsp;2:</strong></p>
+
+<pre><strong>输入: </strong>[&quot;dog&quot;,&quot;racecar&quot;,&quot;car&quot;]
+<strong>输出:</strong> &quot;&quot;
+<strong>解释:</strong> 输入不存在公共前缀。
+</pre>
+
+<p><strong>说明:</strong></p>
+
+<p>所有输入只包含小写字母&nbsp;<code>a-z</code>&nbsp;。</p>
+<div><div>Related Topics</div><div><li>字符串</li></div></div>
+
 ## a15
 ## a16
 ## a17
 ## a18
 ## a19
 ## a20
+<p>给定一个只包括 <code>&#39;(&#39;</code>，<code>&#39;)&#39;</code>，<code>&#39;{&#39;</code>，<code>&#39;}&#39;</code>，<code>&#39;[&#39;</code>，<code>&#39;]&#39;</code>&nbsp;的字符串，判断字符串是否有效。</p>
+
+<p>有效字符串需满足：</p>
+
+<ol>
+	<li>左括号必须用相同类型的右括号闭合。</li>
+	<li>左括号必须以正确的顺序闭合。</li>
+</ol>
+
+<p>注意空字符串可被认为是有效字符串。</p>
+
+<p><strong>示例 1:</strong></p>
+
+<pre><strong>输入:</strong> &quot;()&quot;
+<strong>输出:</strong> true
+</pre>
+
+<p><strong>示例&nbsp;2:</strong></p>
+
+<pre><strong>输入:</strong> &quot;()[]{}&quot;
+<strong>输出:</strong> true
+</pre>
+
+<p><strong>示例&nbsp;3:</strong></p>
+
+<pre><strong>输入:</strong> &quot;(]&quot;
+<strong>输出:</strong> false
+</pre>
+
+<p><strong>示例&nbsp;4:</strong></p>
+
+<pre><strong>输入:</strong> &quot;([)]&quot;
+<strong>输出:</strong> false
+</pre>
+
+<p><strong>示例&nbsp;5:</strong></p>
+
+<pre><strong>输入:</strong> &quot;{[]}&quot;
+<strong>输出:</strong> true</pre>
+<div><div>Related Topics</div><div><li>栈</li><li>字符串</li></div></div>
+
+## a21
+## a22
+## a23
+## a24
+## a25
+## a26
+## a27
+## a28
+## a29
+## a30
+## a31
+## a32
+## a33
+## a34
+## a35
+## a36
+## a37
+## a38
+## a39
+## a4
