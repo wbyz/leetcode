@@ -27,6 +27,18 @@
 
 package com.wby.leetcode.editor.cn;
 
+/**
+ * author: wbyz
+ * email: agsggdhip@gmail.com
+ * date: 2019/12/10 10:46
+ * Description:
+ * 判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
+ * 本题思路（数学方法）：
+ * 根据举例可知，当该整数为负数时，不是回文数
+ * 当该整数在[0-9]，属于回文数
+ * 当该整数为10的倍数，不是回文数
+ * 其余整数再按照需求条件进行判断
+ */
 public class a9_PalindromeNumber {
     public static void main(String[] args) {
         Solution solution = new a9_PalindromeNumber().new Solution();

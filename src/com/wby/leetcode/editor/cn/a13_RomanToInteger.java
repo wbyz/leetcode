@@ -55,6 +55,37 @@ package com.wby.leetcode.editor.cn;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * author: wbyz
+ * email: agsggdhip@gmail.com
+ * date: 2019/12/10 11:31
+ * Description:
+ * 给定一个罗马数字，将其转换成整数。输入确保在 1 到 3999 的范围内。
+ * 字符          数值
+ * I             1
+ * V             5
+ * X             10
+ * L             50
+ * C             100
+ * D             500
+ * M             1000
+ * <p>
+ * 通常：罗马数字中小的数字在大的数字的右边
+ * 特例：
+ * I 可以放在 V (5) 和 X (10) 的左边，来表示 4 和 9。
+ * X 可以放在 L (50) 和 C (100) 的左边，来表示 40 和 90。
+ * C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。
+ * <p>
+ * 本题思路：
+ * 根本上，是判断字符串s相邻两个字符对应数值大小关系，
+ * 若preChar > Char,为加法逻辑，总和+preChar对应数值preNum
+ * 若preChar < Char,为减法逻辑，总和-preChar对应数值preNum
+ * 初始化preNum -> 字符串s第一个字符对应数值，索引值为0
+ * 初始化总和sum
+ * 遍历字符串s,判断相邻字符对应数值大小，累加计入sum，将当前num赋值给preNum
+ * 跳出遍历，sum+=preNum
+ * 返回sum
+ */
 public class a13_RomanToInteger {
     public static void main(String[] args) {
         Solution solution = new a13_RomanToInteger().new Solution();

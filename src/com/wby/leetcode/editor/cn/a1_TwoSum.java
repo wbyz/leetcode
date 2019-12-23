@@ -16,6 +16,16 @@ package com.wby.leetcode.editor.cn;
 import java.util.Arrays;
 import java.util.HashMap;
 
+/**
+ * author: wbyz
+ * email: agsggdhip@gmail.com
+ * date: 2019/12/03 13:11
+ * Description:
+ * 新建一个HashMap集合 map
+ * 遍历数组nums，判断差值是否存在于map中，
+ * 不存在，将元素存入map，回到循环继续遍历
+ * 存在，返回差值元素和当前元素
+ */
 public class a1_TwoSum {
     public static void main(String[] args) {
         Solution solution = new a1_TwoSum().new Solution();

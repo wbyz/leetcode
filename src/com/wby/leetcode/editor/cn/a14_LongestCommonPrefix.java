@@ -22,6 +22,26 @@
 
 package com.wby.leetcode.editor.cn;
 
+/**
+ * author: wbyz
+ * email: agsggdhip@gmail.com
+ * date: 2019/12/10 17:54
+ * Description:
+ * 编写一个函数来查找字符串数组中的最长公共前缀
+ * <p>
+ * 本体思路：
+ * 初始化前缀 -> 取字符串数字strs[]第一个元素字符串
+ * 遍历数组，若前缀和当前字符串不同
+ * 比较前缀和当前元素字符串长度，取最大值和最小值，
+ * 遍历最小值，将相同字符查出字符串缓存，直到不同字符跳出循环
+ * 继续遍历数组直到跳出
+ * 前缀赋值为字符串缓存
+ * 返回前缀
+ * <p>
+ * 健壮分析：
+ * 若字符串为空，返回""
+ * 若字符串有空值，遍历数组时，返回""
+ */
 public class a14_LongestCommonPrefix {
     public static void main(String[] args) {
         Solution solution = new a14_LongestCommonPrefix().new Solution();
