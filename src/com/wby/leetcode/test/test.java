@@ -9,14 +9,18 @@ package com.wby.leetcode.test;
 public class test {
     public static void main(String[] args) {
         String str = "abcdefg";
-        String substring = str.substring(0, 2);
-        char a = 'a';
-        char b = 'b';
-        str = String.valueOf(a + b);
-        System.out.println(str);
-        System.out.println(substring);
+//        String substring = str.substring(0, 2);
+//        char a = 'a';
+//        char b = 'b';
+//        str = String.valueOf(a + b);
+//        System.out.println(str);
+//        System.out.println(substring);
+//
+//        int i = 1 & 1;
+//        System.out.println(i);
 
-        int i = 1 & 1;
-        System.out.println(i);
+        int cd = str.indexOf("cd");
+        System.out.println(cd);
+        System.out.println(str.substring(cd));
     }
 }
