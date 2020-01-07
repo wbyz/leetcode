@@ -40,10 +40,11 @@ public class Kmp {
      * @return
      */
     public int kmp(String ts, String ps) {
-        //  // 如果ts或者ps为null 直接返回-1
+        // 如果ts或者ps为null 直接返回-1
         if (ts == null || ps ==null){
             return -1;
         }
+
         // str -> char[]
         char[] t = ts.toCharArray();
         char[] p = ps.toCharArray();
@@ -104,8 +105,8 @@ public class Kmp {
     }
 
     public static void main(String[] args) {
-        String ts = "";
-        String ps = null;
+        String ts = "hello";
+        String ps = "ll";
         Kmp kmp = new Kmp();
         int i = kmp.kmp(ts, ps);
 
