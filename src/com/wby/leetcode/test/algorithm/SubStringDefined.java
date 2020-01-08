@@ -43,6 +43,11 @@ public class SubStringDefined {
         }
     }
 
+    /** kmp 获取next[]
+     *
+     * @param ps 模式串
+     * @return int[]
+     */
     public static int[] getNext(String ps) {
 
         char[] p = ps.toCharArray();

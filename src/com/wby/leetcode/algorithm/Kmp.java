@@ -9,6 +9,8 @@ import com.wby.leetcode.test.algorithm.SubStringDefined;
  * package_name: com.wby.leetcode.algorithm
  * <p>
  * description:
+ * 相似的查找算法有 KMP，BM，Horspool
+ *
  * 暴力破解法{@link SubStringDefined}
  * 匹配最大子串 -- KMP算法 (未完成)
  * <p>
