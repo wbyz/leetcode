@@ -9,8 +9,8 @@ package com.wby.leetcode.test;
  * description:
  */
 public class ListNode {
-    int val;
-    ListNode next;
+    public int val;
+    public ListNode next;
 
     public ListNode(){}
 
@@ -49,7 +49,7 @@ public class ListNode {
         }
     }
 
-    String print(){
+    public String print(){
         String out = "";
         ListNode temp = this;
         while (temp.next!=null){
