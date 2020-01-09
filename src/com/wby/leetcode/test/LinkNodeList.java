@@ -9,37 +9,37 @@ package com.wby.leetcode.test;
  * description:
  */
 public class LinkNodeList {
-    Node head;
-    Node current;
+    ListNode head;
+    ListNode current;
 
     public void add(int data){
         //如果头结点为空,为头结点
         if (head == null){
-            head = new Node(data);
+            head = new ListNode(data);
             current = head;
         } else {
-            current.next = new Node(data);
+            current.next = new ListNode(data);
             current = current.next;
         }
     }
 
     //打印链表
-    public void print(Node node) {
+    public void print(ListNode node) {
         if(node == null) {
             return;
         }
 
         current = node;
-        System.out.print(current.data + " ");
+        System.out.print(current.val + " ");
         // current的next结点若为空跳出循环，避免current被置空
         while(current.next != null) {
             current = current.next;
-            System.out.print(current.data + " ");
+            System.out.print(current.val + " ");
         }
     }
 
     //初始化链表,并且返回表头
-    public Node init() {
+    public ListNode init() {
         for(int i=0; i<10; i++) {
             this.add(i);
         }
@@ -47,7 +47,7 @@ public class LinkNodeList {
     }
 
     //求链表长度
-    public int get_length(Node head) {
+    public int get_length(ListNode head) {
         if (head == null) {
             return -1;
         }
@@ -66,7 +66,7 @@ public class LinkNodeList {
     public static void main(String[] args) {
         LinkNodeList list = new LinkNodeList();
         System.out.println(list.get_length(list.head));
-        Node head = list.init();
+        ListNode head = list.init();
         list.print(head);
         System.out.println();
         System.out.println(list.get_length(list.head));
