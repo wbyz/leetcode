@@ -69,7 +69,7 @@ import java.util.Set;
  * <p>
  * 空间复杂度：O(min(m, n))O(min(m,n))，与之前的方法相同。滑动窗口法需要 O(k)O(k) 的空间，其中 kk 表示 Set 的大小。而 Set 的大小取决于字符串 nn 的大小以及字符集 / 字母 mm 的大小。
  * <p>
- * 方法四：（官方） 同方法一
+ * 方法四：（官方） 思路同方法一，优化判断逻辑
  */
 public class a3_LongestSubstringWithoutRepeatingCharacters {
     public static void main(String[] args) {
